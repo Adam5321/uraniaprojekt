@@ -1,0 +1,12 @@
+Végső Áldozat;120;László Kovács;Péter Szabó, Andrea Tóth;2023;Egy titkos ügynök a világ megmentésére készül, miközben saját belső démonaival is meg kell küzdenie.;Akció
+Fények és Árnyak;95;János Varga;Zsófia Kerekes, Máté Csaba;2024;Egy fiatal nő próbálja megfejteni édesanyja titkait egy kisvárosban.;Dráma
+Elveszett Hős;110;Nóra Szilágyi;László Nagy, Júlia Székely;2022;A főszereplő férfi küzd a háború utáni életben való helytállásért, miközben a világ szemében már nem számít hősnek.;Dráma
+A Tükör Másik Oldala;105;Róbert Pálfi;Levente Farkas, Eszter Zoltán;2023;A főhős egy párhuzamos világban ébred fel, ahol minden más, mint amit ismert.;Thriller
+Szélhámosok;125;Anna Kiss;József Balázs, Renáta Varga;2024;Két csaló életét követhetjük, akik a legnagyobb átverésre készülnek.;Komédia
+A Végtelen Keresés;135;Gábor Molnár;Zoltán Horváth, Laura Puskás;2022;Egy férfi elindul a világ végére, hogy megtalálja elveszett testvérét.;Kaland
+A Csend Hatalma;90;Katalin Hegedüs;Miklós Varga, Krisztina Tóth;2023;Egy magányos férfi a természetben találkozik valakivel, aki megváltoztatja életét.;Romantikus
+Végső Igazság;115;László Farkas;Márk Kovács, Emese Dózsa;2025;Egy igazságügyi nyomozó igyekszik megtalálni a bűnöst egy komplex gyilkossági ügyben.;Thriller
+Képzelet Szárnyán;125;Erik Tóth;Zita Gál, Dániel Barna;2023;Egy tehetséges fiatal művész életének fordulópontjait követhetjük.;Dráma
+Két Lépés a Múltra;100;Gergely Varga;Noémi Kiss, Ádám Földi;2023;Egy családot sújtó titok, amely generációkon átível.;Dráma
+Lángoló Sziget;130;Péter Juhász;Anikó László, Viktor Tóth;2022;A film egy katasztrófát követ, amely hatalmas változást hoz a szigetlakók életében.;Akció
+Az Elveszett Évszak;140;András Zsiga;Miklós Kállai, Anna László;2024;Egy elhagyott hegyi faluban egy titokzatos természetfeletti jelenség kezd teret hódítani.;Horror

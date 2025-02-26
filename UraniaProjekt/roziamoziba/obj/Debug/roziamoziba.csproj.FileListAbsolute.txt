@@ -1,0 +1,24 @@
+H:\Új mappa\roziamoziba\obj\Debug\roziamoziba.csproj.AssemblyReference.cache
+H:\Új mappa\roziamoziba\obj\Debug\roziamoziba.csproj.CoreCompileInputs.cache
+H:\Új mappa\roziamoziba\obj\Debug\roziamoziba.exe
+H:\Új mappa\roziamoziba\obj\Debug\roziamoziba.pdb
+H:\Új mappa\roziamoziba\bin\Debug\movies.txt
+H:\Új mappa\roziamoziba\bin\Debug\roziamoziba.exe.config
+H:\Új mappa\roziamoziba\bin\Debug\roziamoziba.exe
+H:\Új mappa\roziamoziba\bin\Debug\roziamoziba.pdb
+H:\asztali alk\form\roziamoziba\bin\Debug\movies.txt
+H:\asztali alk\form\roziamoziba\bin\Debug\roziamoziba.exe.config
+H:\asztali alk\form\roziamoziba\bin\Debug\roziamoziba.exe
+H:\asztali alk\form\roziamoziba\bin\Debug\roziamoziba.pdb
+H:\asztali alk\form\roziamoziba\obj\Debug\roziamoziba.csproj.AssemblyReference.cache
+H:\asztali alk\form\roziamoziba\obj\Debug\roziamoziba.csproj.CoreCompileInputs.cache
+H:\asztali alk\form\roziamoziba\obj\Debug\roziamoziba.exe
+H:\asztali alk\form\roziamoziba\obj\Debug\roziamoziba.pdb
+C:\asztali\roziamoziba\bin\Debug\movies.txt
+C:\asztali\roziamoziba\bin\Debug\roziamoziba.exe.config
+C:\asztali\roziamoziba\bin\Debug\roziamoziba.exe
+C:\asztali\roziamoziba\bin\Debug\roziamoziba.pdb
+C:\asztali\roziamoziba\obj\Debug\roziamoziba.csproj.AssemblyReference.cache
+C:\asztali\roziamoziba\obj\Debug\roziamoziba.csproj.CoreCompileInputs.cache
+C:\asztali\roziamoziba\obj\Debug\roziamoziba.exe
+C:\asztali\roziamoziba\obj\Debug\roziamoziba.pdb
