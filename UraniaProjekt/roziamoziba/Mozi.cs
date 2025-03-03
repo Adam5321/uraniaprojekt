@@ -1,72 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace roziamoziba
 {
     public class Mozi
     {
         public MusorLista musorlista = new MusorLista();
+
+        private void Szures1(string sv, ref List<Film> svfilmek)
+        {
+            for (int i = 0; i < musorlista.vetitesek.Count; i++)
+            {
+                if (musorlista.vetitesek[i].Film.Kategoria == sv && (!svfilmek.Contains(musorlista.vetitesek[i].Film)))
+                    svfilmek.Add(musorlista.vetitesek[i].Film);
+            }
+        }
+
+        private void Szures2(int i, string sv, ref List<Film> svfilmek)
+        {
+            string t = $"{musorlista.vetitesek[i].Idopont.Month}. {musorlista.vetitesek[i].Idopont.Day}.";
+            if (t == sv && (!svfilmek.Contains(musorlista.vetitesek[i].Film)))
+                svfilmek.Add(musorlista.vetitesek[i].Film);
+        }
+
+        private void Mindegyik(ref List<Film> svfilmek)
+        {
+            for (int i = 0; i < musorlista.vetitesek.Count; i++)
+            {
+                if (!svfilmek.Contains(musorlista.vetitesek[i].Film))
+                    svfilmek.Add(musorlista.vetitesek[i].Film);
+            }
+        }
+
         public void feladat()
         {
-            musorlista.musorlistaGeneral();
+            musorlista.MusorlistaGeneral();
         }
+
         public List<Film> katSzures(string sv)
         {
             List<Film> svfilmek = new List<Film>();
-            if(sv != "Bármelyik")
-            {
-                for (int i = 0; i < musorlista.vetitesek.Count; i++)
-                {
-                    if (musorlista.vetitesek[i].Film.Kategoria == sv && (!svfilmek.Contains(musorlista.vetitesek[i].Film)))
-                    {
-                        svfilmek.Add(musorlista.vetitesek[i].Film);
-                    }
-                }
-                return svfilmek;
-            }
-            else
-            {
-                for (int i = 0; i < musorlista.vetitesek.Count; i++)
-                {
-                    if (!svfilmek.Contains(musorlista.vetitesek[i].Film))
-                    {
-                        svfilmek.Add(musorlista.vetitesek[i].Film);
-                    }
-                }
-                return svfilmek;
-            }
+            if(sv != "Bármelyik") Szures1(sv, ref svfilmek);
+            else Mindegyik(ref svfilmek);
+            return svfilmek;
         }
+
         public List<Film> vetSzures(string sv)
         {
             List<Film> svfilmek = new List<Film>();
             if (sv != "Bármelyik")
             {
                 for (int i = 0; i < musorlista.vetitesek.Count; i++)
-                {
-                    string t = $"{musorlista.vetitesek[i].Idopont.Month}. {musorlista.vetitesek[i].Idopont.Day}.";
-                    if (t == sv && (!svfilmek.Contains(musorlista.vetitesek[i].Film)))
-                    {
-                        svfilmek.Add(musorlista.vetitesek[i].Film);
-                    }
-                }
-                return svfilmek;
+                    Szures2(i, sv, ref svfilmek);
             }
-            else
-            {
-                for (int i = 0; i < musorlista.vetitesek.Count; i++)
-                {
-                    if (!svfilmek.Contains(musorlista.vetitesek[i].Film))
-                    {
-                        svfilmek.Add(musorlista.vetitesek[i].Film);
-                    }
-                }
-                return svfilmek;
-            }
+            else Mindegyik(ref svfilmek);
+            return svfilmek;
         }
-        
-        
     }
 }

@@ -14,6 +14,7 @@ namespace UraniaProjektGUI
     public partial class Form1 : Form
     {
         readonly Mozi m = new Mozi();
+        List<Film> kozosfilmek = new List<Film>();
         List<Film> filmek = Filmfajlkezelo.BeolvasFilmeket("movies.txt");
         public Form1()
         {
@@ -55,8 +56,7 @@ namespace UraniaProjektGUI
         private void button1_Click(object sender, EventArgs e)
         {
             listBox3.Items.Clear();
-
-            List<Film> kozosfilmek = new List<Film>();
+            kozosfilmek.Clear();
 
             object o = listBox1.Items[listBox1.SelectedIndex];
             object o2 = listBox2.Items[listBox2.SelectedIndex];
@@ -76,6 +76,12 @@ namespace UraniaProjektGUI
             }
 
             kozosfilmek.ForEach(x => listBox3.Items.Add(x));
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label2.Text = kozosfilmek[listBox3.SelectedIndex].Nev + " (" + kozosfilmek[listBox3.SelectedIndex].Ev + "), Kategória: " + kozosfilmek[listBox3.SelectedIndex].Kategoria;
+            label3.Text = kozosfilmek[listBox3.SelectedIndex].Leiras;
         }
     }
 }

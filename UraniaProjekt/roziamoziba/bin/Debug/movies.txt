@@ -10,3 +10,11 @@ Képzelet Szárnyán;125;Erik Tóth;Zita Gál, Dániel Barna;2023;Egy tehetsége
 Két Lépés a Múltra;100;Gergely Varga;Noémi Kiss, Ádám Földi;2023;Egy családot sújtó titok, amely generációkon átível.;Dráma
 Lángoló Sziget;130;Péter Juhász;Anikó László, Viktor Tóth;2022;A film egy katasztrófát követ, amely hatalmas változást hoz a szigetlakók életében.;Akció
 Az Elveszett Évszak;140;András Zsiga;Miklós Kállai, Anna László;2024;Egy elhagyott hegyi faluban egy titokzatos természetfeletti jelenség kezd teret hódítani.;Horror
+Fagyott Emlékek;110;Tamás Bodor;Gábor Pataki, Éva Vass;2023;Egy férfi visszatér gyermekkora helyszínére, hogy megfejtse családja múltjának titkait.;Dráma
+Árnyék a Víz Alatt;120;Zsófia Kiss;Roland Fekete, Lívia Bognár;2024;Egy mélytengeri expedíció váratlan felfedezésre bukkan, amely mindent megváltoztathat.;Sci-fi
+Az Utolsó Alku;105;Bence Horváth;Csaba Molnár, Zita Nagy;2022;Egy nyugdíjba vonult bérgyilkosnak még egy utolsó megbízatást kell teljesítenie.;Thriller
+Szívhangok;98;Krisztina Farkas;János Papp, Veronika Balogh;2023;Két idegen véletlen találkozása egy kórházban megváltoztatja az életüket.;Romantikus
+Veszélyes Kötelék;130;Attila Kovács;Zsolt Kelemen, Edit Varga;2025;Egy rendőrnő beépül egy bűnszervezetbe, de az ügy személyesebbé válik, mint gondolta volna.;Akció
+Titkos Lázadás;125;Miklós Juhász;Anett Barna, Gergely Mészáros;2024;Egy elnyomó rendszer elleni harc hősei, akik saját biztonságukat kockáztatják a szabadságért.;Történelmi
+Elmejáték;110;Dóra Sándor;Ádám Gulyás, Zsuzsa Boros;2023;Egy pszichológus és páciense közötti különös kapcsolat, amely fokozatosan átalakul valami másba.;Dráma
+Napfény és Vihar;95;Gábor Pataki;Ivett Károlyi, Dénes Tóth;2023;Egy testvérpár története, akiknek életét egy váratlan esemény felforgatja.;Dráma
