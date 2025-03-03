@@ -8,7 +8,7 @@ namespace roziamoziba
         static void Main()
         {
             Mozi mozi = new Mozi();
-            mozi.feladat();
+            mozi.Feladat();
             Console.ReadLine();
         }
     }
