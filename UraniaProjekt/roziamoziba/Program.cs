@@ -9,6 +9,7 @@ namespace roziamoziba
         {
             Mozi mozi = new Mozi();
             mozi.feladat();
+            mozi.musorlista.musorKiir();
             Console.ReadLine();
         }
     }

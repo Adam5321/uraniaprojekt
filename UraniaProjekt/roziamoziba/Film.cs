@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace roziamoziba
 {
-    public class Film
+    public class Film : IFilm
     {
         public string Nev { get; set; }
         public string Kategoria { get; set; }
@@ -29,9 +29,7 @@ namespace roziamoziba
         }
         public override string ToString()
         {
-            return string.Format("{0}, {1}, {2}", Nev, Ido, Ev);
+            return string.Format("{0}, {1} perc, {2}", Nev, Ido, Ev);
         }
-
-
     }
 }

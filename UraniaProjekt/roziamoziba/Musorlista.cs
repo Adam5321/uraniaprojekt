@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace roziamoziba
 {
+    /// <summary>
+    /// Class <c>MusorLista</c> Létrehoz egy műsorlistát.
+    /// </summary>
+
     public class MusorLista
     {
         public List<Vetites> vetitesek;
@@ -14,6 +18,15 @@ namespace roziamoziba
             termek = new List<Terem>(){new Terem("1. Terem"), new Terem("2. Terem"), new Terem("3. Terem")};
         }
 
+        /// <summary>
+        /// Method <c>Generalas</c> A paraméterek alapján feltölt egy listát a megadott filmekkel.
+        /// </summary>
+        /// <param name="filmek"></param> Filmek listája.
+        /// <param name="elsonap"></param> Első vetítési nap.
+        /// <param name="i"></param> Napok ciklusának változója.
+        /// <param name="j"></param> Termek ciklusának változója.
+        /// <param name="r"></param> Random szám.
+        /// <param name="svlista"></param> Segéd lista.
         private void Generalas(List<Film> filmek, DateTime elsonap, int i, int j, ref Random r, ref List<Vetites> svlista)
         {
             int ora = 9, perc = 0, index = 0;
@@ -22,7 +35,7 @@ namespace roziamoziba
             svlista.Add(new Vetites(elsofilm, idopont, termek[j]));
             Film film;
 
-            do
+            while(true)
             {
                 film = filmek[r.Next(filmek.Count)];
                 int t = svlista[index].Film.Ido;
@@ -42,13 +55,21 @@ namespace roziamoziba
                 idopont = elsonap.AddDays(i).AddHours(ora).AddMinutes(perc);
                 svlista.Add(new Vetites(film, idopont, termek[j]));
                 index++;
-            } while (ora + Math.Ceiling(Convert.ToDouble(film.Ido) / 60) >= 24);
+                if (ora + Math.Ceiling(Convert.ToDouble(film.Ido) / 60) >= 24)
+                {
+                    break;
+                }
+            }
 
             for (int x = 0; x < svlista.Count; x++)
                 vetitesek.Add(svlista[x]);
 
             svlista.Clear();
         }
+
+        /// <summary>
+        /// Method <c>MusorlistaGeneral</c> A General metódus segítségével legenerál egy műsorlistát.
+        /// </summary>
 
         public void MusorlistaGeneral()
         {

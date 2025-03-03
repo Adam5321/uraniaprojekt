@@ -81,7 +81,7 @@ namespace UraniaProjektGUI
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             label2.Text = kozosfilmek[listBox3.SelectedIndex].Nev + " (" + kozosfilmek[listBox3.SelectedIndex].Ev + "), Kategória: " + kozosfilmek[listBox3.SelectedIndex].Kategoria;
-            label3.Text = kozosfilmek[listBox3.SelectedIndex].Leiras;
+            label3.Text = "Leírás: " + kozosfilmek[listBox3.SelectedIndex].Leiras;
         }
     }
 }

@@ -36,6 +36,13 @@ namespace roziamoziba
             musorlista.MusorlistaGeneral();
         }
 
+
+        /// <summary>
+        /// Method <c>katSzures</c> Szűrés kategória szerint
+        /// </summary>
+        /// <param name="sv"></param> Mi alapján szűrjön.
+        /// <returns>A filmek lista</returns>
+
         public List<Film> katSzures(string sv)
         {
             List<Film> svfilmek = new List<Film>();
@@ -43,6 +50,12 @@ namespace roziamoziba
             else Mindegyik(ref svfilmek);
             return svfilmek;
         }
+
+        /// <summary>
+        /// Method <c>vetSzures</c> Szűrés vetitési időpont szerint.
+        /// </summary>
+        /// <param name="sv"></param> Mi alapján szűrjön.
+        /// <returns>A filmek lista</returns>
 
         public List<Film> vetSzures(string sv)
         {

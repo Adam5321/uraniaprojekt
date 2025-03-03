@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Film.cs" />
     <Compile Include="Filmfajlkezelo.cs" />
+    <Compile Include="IFilm.cs" />
     <Compile Include="Mozi.cs" />
     <Compile Include="Musorlista.cs" />
     <Compile Include="Program.cs" />
