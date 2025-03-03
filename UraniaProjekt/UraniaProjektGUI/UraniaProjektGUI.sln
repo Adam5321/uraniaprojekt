@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UraniaProjektGUI", "UraniaProjektGUI\UraniaProjektGUI.csproj", "{0A0A4E6D-BDE5-45D4-A5B2-837CFD5B62AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "roziamoziba", "..\roziamoziba\roziamoziba.csproj", "{7D1AFA37-E21E-4FF5-A731-CB728D0D3EF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A0A4E6D-BDE5-45D4-A5B2-837CFD5B62AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A0A4E6D-BDE5-45D4-A5B2-837CFD5B62AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A0A4E6D-BDE5-45D4-A5B2-837CFD5B62AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1AFA37-E21E-4FF5-A731-CB728D0D3EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1AFA37-E21E-4FF5-A731-CB728D0D3EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1AFA37-E21E-4FF5-A731-CB728D0D3EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1AFA37-E21E-4FF5-A731-CB728D0D3EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.csproj.AssemblyReference.cache
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.Form1.resources
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.Properties.Resources.resources
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.csproj.GenerateResource.cache
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.csproj.CoreCompileInputs.cache
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\movies.txt
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\UraniaProjektGUI.exe.config
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\UraniaProjektGUI.exe
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\UraniaProjektGUI.pdb
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\roziamoziba.exe
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\roziamoziba.pdb
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\bin\Debug\roziamoziba.exe.config
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaPr.B7514A79.Up2Date
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.exe
+H:\asztali alk\form\UraniaProjekt\UraniaProjektGUI\UraniaProjektGUI\obj\Debug\UraniaProjektGUI.pdb
