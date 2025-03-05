@@ -68,5 +68,18 @@ namespace roziamoziba
             else Mindegyik(ref svfilmek);
             return svfilmek;
         }
+        public List<Vetites> vetSzures2(string sv)
+        {
+            List<Vetites> svvetitesek = new List<Vetites>();
+            for (int i = 0; i < musorlista.vetitesek.Count; i++)
+            {
+                string t = $"{musorlista.vetitesek[i].Idopont.Month}. {musorlista.vetitesek[i].Idopont.Day}.";
+                if (t == sv && !svvetitesek.Contains(musorlista.vetitesek[i]))
+                {
+                    svvetitesek.Add(musorlista.vetitesek[i]);
+                }
+            }
+            return svvetitesek;
+        }
     }
 }

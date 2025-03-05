@@ -30,20 +30,28 @@
         {
             this.tabPages = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.moviesListbox = new System.Windows.Forms.ListBox();
+            this.daysListbox = new System.Windows.Forms.ListBox();
+            this.katListbox = new System.Windows.Forms.ListBox();
             this.movies = new System.Windows.Forms.Label();
             this.days = new System.Windows.Forms.Label();
             this.categories = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.foglalasbtn = new System.Windows.Forms.Button();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.vetitesListbox = new System.Windows.Forms.ListBox();
+            this.datesListbox = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabPages.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPages
@@ -63,9 +71,9 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.listBox3);
-            this.tabPage1.Controls.Add(this.listBox2);
-            this.tabPage1.Controls.Add(this.listBox1);
+            this.tabPage1.Controls.Add(this.moviesListbox);
+            this.tabPage1.Controls.Add(this.daysListbox);
+            this.tabPage1.Controls.Add(this.katListbox);
             this.tabPage1.Controls.Add(this.movies);
             this.tabPage1.Controls.Add(this.days);
             this.tabPage1.Controls.Add(this.categories);
@@ -77,6 +85,31 @@
             this.tabPage1.Text = "Film lekérés";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 224);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Film leírás:";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(558, 42);
@@ -87,31 +120,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox3
+            // moviesListbox
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(306, 42);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(224, 95);
-            this.listBox3.TabIndex = 5;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            this.moviesListbox.FormattingEnabled = true;
+            this.moviesListbox.Location = new System.Drawing.Point(306, 42);
+            this.moviesListbox.Name = "moviesListbox";
+            this.moviesListbox.Size = new System.Drawing.Size(224, 95);
+            this.moviesListbox.TabIndex = 5;
+            this.moviesListbox.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
-            // listBox2
+            // daysListbox
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(141, 42);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 95);
-            this.listBox2.TabIndex = 4;
+            this.daysListbox.FormattingEnabled = true;
+            this.daysListbox.Location = new System.Drawing.Point(141, 42);
+            this.daysListbox.Name = "daysListbox";
+            this.daysListbox.Size = new System.Drawing.Size(120, 95);
+            this.daysListbox.TabIndex = 4;
             // 
-            // listBox1
+            // katListbox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 42);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 3;
+            this.katListbox.FormattingEnabled = true;
+            this.katListbox.Location = new System.Drawing.Point(6, 42);
+            this.katListbox.Name = "katListbox";
+            this.katListbox.ScrollAlwaysVisible = true;
+            this.katListbox.Size = new System.Drawing.Size(120, 95);
+            this.katListbox.TabIndex = 3;
             // 
             // movies
             // 
@@ -142,6 +175,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.foglalasbtn);
+            this.tabPage2.Controls.Add(this.dgv);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.vetitesListbox);
+            this.tabPage2.Controls.Add(this.datesListbox);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -149,6 +188,61 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hely foglalás";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // foglalasbtn
+            // 
+            this.foglalasbtn.Location = new System.Drawing.Point(417, 281);
+            this.foglalasbtn.Name = "foglalasbtn";
+            this.foglalasbtn.Size = new System.Drawing.Size(75, 23);
+            this.foglalasbtn.TabIndex = 5;
+            this.foglalasbtn.Text = "Foglalás";
+            this.foglalasbtn.UseVisualStyleBackColor = true;
+            this.foglalasbtn.Click += new System.EventHandler(this.foglalasbtn_Click);
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(26, 157);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(362, 183);
+            this.dgv.TabIndex = 4;
+            this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(242, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Vetítések";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Dátumok";
+            // 
+            // vetitesListbox
+            // 
+            this.vetitesListbox.FormattingEnabled = true;
+            this.vetitesListbox.Location = new System.Drawing.Point(166, 38);
+            this.vetitesListbox.Name = "vetitesListbox";
+            this.vetitesListbox.Size = new System.Drawing.Size(222, 95);
+            this.vetitesListbox.TabIndex = 1;
+            this.vetitesListbox.SelectedIndexChanged += new System.EventHandler(this.vetitesListbox_SelectedIndexChanged);
+            // 
+            // datesListbox
+            // 
+            this.datesListbox.FormattingEnabled = true;
+            this.datesListbox.Location = new System.Drawing.Point(26, 38);
+            this.datesListbox.Name = "datesListbox";
+            this.datesListbox.Size = new System.Drawing.Size(120, 95);
+            this.datesListbox.TabIndex = 0;
+            this.datesListbox.SelectedIndexChanged += new System.EventHandler(this.datesListbox_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -159,31 +253,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Heti filmek megtekintése";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Film leírás:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 211);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 224);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 9;
             // 
             // Form1
             // 
@@ -196,6 +265,9 @@
             this.tabPages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,13 +281,19 @@
         private System.Windows.Forms.Label days;
         private System.Windows.Forms.Label categories;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox daysListbox;
+        private System.Windows.Forms.ListBox katListbox;
+        private System.Windows.Forms.ListBox moviesListbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox datesListbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox vetitesListbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Button foglalasbtn;
     }
 }
 
