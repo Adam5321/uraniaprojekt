@@ -48,6 +48,8 @@
             this.vetitesListbox = new System.Windows.Forms.ListBox();
             this.datesListbox = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.nyomtbtn = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.tabPages.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -175,6 +177,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.nyomtbtn);
             this.tabPage2.Controls.Add(this.foglalasbtn);
             this.tabPage2.Controls.Add(this.dgv);
             this.tabPage2.Controls.Add(this.label5);
@@ -254,6 +257,16 @@
             this.tabPage3.Text = "Heti filmek megtekintése";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // nyomtbtn
+            // 
+            this.nyomtbtn.Location = new System.Drawing.Point(417, 310);
+            this.nyomtbtn.Name = "nyomtbtn";
+            this.nyomtbtn.Size = new System.Drawing.Size(75, 23);
+            this.nyomtbtn.TabIndex = 6;
+            this.nyomtbtn.Text = "Nyomtatás";
+            this.nyomtbtn.UseVisualStyleBackColor = true;
+            this.nyomtbtn.Click += new System.EventHandler(this.nyomtbtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,7 +274,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabPages);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Mozi";
             this.tabPages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -294,6 +307,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Button foglalasbtn;
+        private System.Windows.Forms.Button nyomtbtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

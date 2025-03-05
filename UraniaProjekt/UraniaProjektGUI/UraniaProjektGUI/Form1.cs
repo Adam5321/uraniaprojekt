@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using roziamoziba;
+using System.IO;
 
 namespace UraniaProjektGUI
 {
@@ -40,6 +41,7 @@ namespace UraniaProjektGUI
 
             dgv.MultiSelect = false;
             foglalasbtn.Enabled = false;
+            nyomtbtn.Enabled = false;
 
             katListbox.SelectedIndex = katListbox.Items.Count - 1;
             daysListbox.SelectedIndex = daysListbox.Items.Count - 1;
@@ -176,17 +178,45 @@ namespace UraniaProjektGUI
             int y = dgv.CurrentCell.ColumnIndex;
             int x = dgv.CurrentCell.RowIndex;
             
-            if (true && actVetites[vetin].Terem.Ferohely[x,y] == 0)
+            if (actVetites[vetin].Terem.Ferohely[x,y] == 0)
             {
+                nyomtbtn.Enabled = true;
                 actVetites[vetin].Terem.Ferohely[x, y] = 1;
             }
             DgvFelt();
+        }
+        private void Jegy()
+        {
+            int y = dgv.CurrentCell.ColumnIndex;
+            int x = dgv.CurrentCell.RowIndex;
+
+            string sor1 = "Cím: " + actVetites[vetin].Film.Nev;
+            string sor2 = "Dátum: " + actVetites[vetin].Idopont;
+            string sor3 = (x+1) + ". sor, " + (y+1) + ". szék";
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveFileDialog.Title = "Jegy nyomtatás";
+                saveFileDialog.DefaultExt = "txt";
+                saveFileDialog.FileName = "jegy.txt";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(saveFileDialog.FileName,sor1+"\n"+sor2+"\n"+sor3);
+                }
+            }
         }
 
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             dgv.DefaultCellStyle.SelectionBackColor = Color.Yellow;
             dgv.DefaultCellStyle.SelectionForeColor = Color.Yellow;
+            nyomtbtn.Enabled = false;
+        }
+
+        private void nyomtbtn_Click(object sender, EventArgs e)
+        {
+            Jegy();
         }
     }
 }

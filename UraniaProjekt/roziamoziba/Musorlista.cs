@@ -30,7 +30,7 @@ namespace roziamoziba
             int ora = 9, perc = 0, index = 0;
             Film elsofilm = filmek[r.Next(filmek.Count)];
             DateTime idopont = elsonap.AddDays(i).AddHours(ora);
-            svlista.Add(new Vetites(elsofilm, idopont, new Terem(j+1+".Terem", 5+j+1,5+j+1)));
+            svlista.Add(new Vetites(elsofilm, idopont, new Terem(j+1+".Terem", 10+j+1,10+j+1)));
             Film film;
 
             while(true)
@@ -51,7 +51,7 @@ namespace roziamoziba
                 }
 
                 idopont = elsonap.AddDays(i).AddHours(ora).AddMinutes(perc);
-                svlista.Add(new Vetites(film, idopont, new Terem(j+1+". Terem",5+j+1,5+j+1)));
+                svlista.Add(new Vetites(film, idopont, new Terem(j+1+". Terem",10+j+1,10+j+1)));
                 index++;
                 if (ora + Math.Ceiling(Convert.ToDouble(film.Ido) / 60) >= 24)
                 {

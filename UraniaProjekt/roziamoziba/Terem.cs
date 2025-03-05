@@ -20,7 +20,7 @@ namespace roziamoziba
             {
                 for (int j = 0; j < m; j++)
                 {
-                    int random = r.Next(0,3);
+                    int random = r.Next(0,5);
                     if (random == 0)
                     {
                         mat[i, j] = 1;
